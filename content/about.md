@@ -4,6 +4,12 @@ const eleventyNavigation = {
 	order: 3
 };
 ---
-# About
+# Hello :)
+My name is Chris Bloodsworth. I love simple, beautiful code and discovering
+better ways to write it. I am very passionate about programming languages and
+creating better tools for developers.
 
-I am a person that writes stuff.
+You can reach me via
+<a href="mailto:christopherbloodsworth@gmail.com"
+	 target="_blank" rel=noopener> email</a>.
+I am also on [Github](https://github.com/cbloodsworth).

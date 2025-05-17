@@ -1,0 +1,22 @@
+---
+title: Post title
+description: Post description
+date: 2024-05-17
+tags: some tag
+---
+
+## Subtitle here
+Something
+
+Bulleted list
+- a
+- b
+- c
+
+```cpp
+int main() {
+    std::cout << "hello world!" << std::endl;
+}
+```
+
+Post start. Just use markdown.
