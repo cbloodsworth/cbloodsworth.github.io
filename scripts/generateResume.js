@@ -19,17 +19,22 @@ const eleventyNavigation = {
     order: 5
 };
 ---
+<a href="/assets/pdf/cbloodsworth_resume.pdf"><div style="margin-bottom: 0.25em">(pdf version)</div><br /></a>
 ` + htmlContent;
 
     // Styling for the list and tables...
     htmlContent = htmlContent.replaceAll('<li><table>', 
-        `<li style="list-style-type: none; margin-bottom: 0em; margin-left: -2em; width: 120%;">
+        `<li style="list-style-type: none; margin-left: -2em; width: 120%;">
         <table style="width: 100%; margin-bottom: 0em;">`
     );
 
     // Slight styling for the headers
     htmlContent = htmlContent.replaceAll('<h1 ', 
         '<h1 style="margin-bottom: 0.5em;" ')
+
+    htmlContent = htmlContent.replace(/<p><strong><span class="smallcaps">Christopher\s*Bloodsworth<\/span><\/strong><br \/>/,
+        '<h1>Christopher Bloodsworth</h1><p>'
+    )
 
     // Replace email with `mailto:` link
     htmlContent = htmlContent.replace('href="christopherbloodsworth@gmail.com"',
