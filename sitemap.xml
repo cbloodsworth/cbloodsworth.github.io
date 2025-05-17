@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://example.com/pearblog/about/</loc>
+		<lastmod>2025-05-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/pearblog/blog/</loc>
+		<lastmod>2025-05-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/pearblog/</loc>
+		<lastmod>2025-05-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/pearblog/resume/</loc>
+		<lastmod>2025-05-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/pearblog/tags/</loc>
+		<lastmod>2025-05-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/pearblog/feed/feed.xml</loc>
+		<lastmod>2025-05-17</lastmod>
+	</url>
+</urlset>
