@@ -29,8 +29,8 @@ h1, h2, h3 {
 
 /* Theme colors */
 :root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
+	--color-gray-20: #eaffed;
+	--color-gray-50: #aad1a5;
 	--color-gray-90: #333;
 
 	--background-color: #d4e9cf;
@@ -315,6 +315,76 @@ header {
 }
 .smallIcon:hover {
 	filter: brightness(20%);
+}
+
+.project-grid {
+    display: grid;
+}
+
+.project-card {
+    display: grid;
+    position: relative;
+    padding: 15px;
+	background-color: var(--color-gray-50);
+	--color-gray-90: #333;
+    border-color: rgb(270, 220, 140);
+    border-radius: 10px;
+    font-weight: bolder;
+    margin-right: 4em;
+    margin-bottom: 4em;
+    transition: opacity 0.15s;
+    transition: shadow 0.15s;
+    transition: height 0.2s;
+    transition: width 0.2s;
+
+    font-size: large;
+    vertical-align: top;
+    text-align: center;
+
+    top: 0;
+    transition: top 0.5s cubic-bezier(0.23, 1, 0.32, 1), 
+                height 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.noclick:active {
+    animation: onclick 0.15s;
+}
+
+@keyframes onclick {
+    0% {transform: translateX(2%);}
+    25% {transform: translateX(-2%);}
+    50% {transform: translateX(2%);}
+    75% {transform: translateX(-2%);}
+}
+
+.project-card:hover {
+    opacity: 0.9;
+    top: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.project-card:active {
+    opacity: 0.85;
+    top: 20px;
+}
+
+.project-thumb {
+	height: 12em;
+    width: 12em;
+
+	margin-top: 5px;
+	margin-bottom: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+   
+}
+
+.project-info {
+    margin-top: -0.7vh;
+    margin-inline: -0.3vw;
+    font-size: 0.8em;
+    line-height: 2vh; 
+    font-weight: bolder;
 }</style>
 		
 	</head>
@@ -331,6 +401,7 @@ header {
 					<li class="nav-item"><a href="/pearblog/about/">About</a></li>
 					<li class="nav-item"><a href="/pearblog/feed/feed.xml">Feed</a></li>
 					<li class="nav-item"><a href="/pearblog/resume/" aria-current="page">Resume</a></li>
+					<li class="nav-item"><a href="/pearblog/projects/">Projects</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -567,7 +638,7 @@ algorithms to create a realistic swamp to explore. </span>
 			</a>
 		</footer>
 
-		<!-- This page `/resume/` was built on 2025-05-17T23:45:00.937Z -->
+		<!-- This page `/resume/` was built on 2025-05-18T12:13:25.768Z -->
 		<script type="module" src="/pearblog/dist/xbxy_EL6cU.js"></script>
 	</body>
 </html>
