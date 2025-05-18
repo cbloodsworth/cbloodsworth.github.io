@@ -330,8 +330,8 @@ header {
     border-color: rgb(270, 220, 140);
     border-radius: 10px;
     font-weight: bolder;
-    margin-right: 4em;
-    margin-bottom: 4em;
+    margin-right: 2em;
+    margin-bottom: 2em;
     transition: opacity 0.15s;
     transition: shadow 0.15s;
     transition: height 0.2s;
@@ -357,19 +357,26 @@ header {
     75% {transform: translateX(-2%);}
 }
 
-.project-card:hover {
-    opacity: 0.9;
-    top: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+@media (min-width : 60em) {
+	.project-card:hover {
+		top: 10px;
+	}
 }
-.project-card:active {
-    opacity: 0.85;
-    top: 20px;
+.project-card:hover {
+	opacity: 0.9;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width : 60em) {
+	.project-card:active {
+		opacity: 0.85;
+		top: 20px;
+	}
 }
 
 .project-thumb {
-	height: 12em;
-    width: 12em;
+	height: min(12em, 30vw);
+    width: min(12em, 30vw);
 
 	margin-top: 5px;
 	margin-bottom: 1em;
@@ -434,7 +441,7 @@ This is compatible with:
 			</a>
 		</footer>
 
-		<!-- This page `/404.html` was built on 2025-05-18T12:13:25.768Z -->
+		<!-- This page `/404.html` was built on 2025-05-18T12:30:08.427Z -->
 		<script type="module" src="/pearblog/dist/xbxy_EL6cU.js"></script>
 	</body>
 </html>
