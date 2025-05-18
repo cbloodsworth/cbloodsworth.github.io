@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>pearblog</title>
-		<meta name="description" content="Technical thoughts about things I find interesting.">
+		<title>Personal Website</title>
+		<meta name="description" content="This is a post about my personal site that I use for writing blog posts and talking about stuff I&#39;ve worked on.">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -77,6 +77,16 @@ body {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
@@ -370,7 +380,6 @@ header {
 @media (min-width : 60em) {
 	.project-card:active {
 		opacity: 0.85;
-		top: 20px;
 	}
 }
 
@@ -416,7 +425,17 @@ header {
 		<main id="main">
 			<heading-anchors>
 				
-<h1 id="test-page">Test page :)</h1>
+<h1 id="about-this-website">About this website</h1>
+<p>Back in 2021 or so, I had <a href="https://github.com/cbloodsworth/old.cbloodsworth.github.io">thrown together a portfolio website</a>
+as a way to display some of the projects I was working on.</p>
+<p><img src="old-portfolio.png"></p>
+<p>There were some issues with it, and it certainly wasn't mobile friendly, but it served as a
+pretty good starting point. Unfortunately, I never actually got around to implementing any
+of the additional functionality, and it ended up just sitting as a single <code>html</code> file served
+through GitHub pages.</p>
+<p>So, four years later, I decided to give the site a revamp. You can actually see much of the
+old portfolio in the <a href="..">projects</a> tab of this site, but there are also a number of new
+pages. More than one <code>html</code> file this time!</p>
 
 
 			</heading-anchors>
@@ -435,7 +454,7 @@ header {
 		</table>
 		</footer>
 
-		<!-- This page `/projects/portfolio-site/` was built on 2025-05-18T15:11:51.984Z -->
+		<!-- This page `/projects/personal-site/` was built on 2025-05-18T21:08:19.414Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
 	</body>
 </html>

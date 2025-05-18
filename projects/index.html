@@ -79,6 +79,16 @@ body {
 	width: 1px;
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
 img{
   max-width: 100%;
@@ -370,7 +380,6 @@ header {
 @media (min-width : 60em) {
 	.project-card:active {
 		opacity: 0.85;
-		top: 20px;
 	}
 }
 
@@ -426,7 +435,66 @@ header {
     <div class="project-grid">
         
             
-    <div class="project-card noclick" style="grid-row: 1; grid-column: 1; ">
+<div class="project-card noselect " style="grid-row: 1; grid-column: 1; "> 
+    <div class="project-title">
+    
+        <a href="https://github.com/cbloodsworth/pearterm" target="_blank" style="text-decoration: none">
+            <picture><source type="image/avif" srcset="/img/FgkYsnA93Y-240.avif 240w"><source type="image/webp" srcset="/img/FgkYsnA93Y-240.webp 240w"><img loading="lazy" decoding="async" src="/img/FgkYsnA93Y-240.png" alt="github" style="width: 1rem" width="240" height="240"></picture>
+            PearTerm
+        </a>
+    
+    </div>
+    
+    <div class="project-thumb">
+    
+        <a href="/projects/pearterm">
+        <picture><source type="image/avif" srcset="/img/9FLsNdjjfd-1413.avif 1413w"><source type="image/webp" srcset="/img/9FLsNdjjfd-1413.webp 1413w"><img loading="lazy" decoding="async" src="/img/9FLsNdjjfd-1413.png" class="project-thumb" alt="terminal showing output from a few basic commands" width="1413" height="1267"></picture>
+        <picture><source type="image/avif" srcset="/img/INm9cijMxn-512.avif 512w"><source type="image/webp" srcset="/img/INm9cijMxn-512.webp 512w"><img loading="lazy" decoding="async" src="/img/INm9cijMxn-512.png" alt="list" style="width: 2rem; position: absolute; right: 10%;" width="512" height="512"></picture>
+        </a>
+    
+    </div>
+    <div class="project-info">
+    <p>
+        Terminal emulator written in TypeScript. Includes a small client-side file system and a shell with its own set of UNIX-like built-ins.
+    </p>
+    </div>
+    
+    
+    <a href=" /projects/pearterm">
+        <span style="display:block; position: absolute; margin-left: -1rem; top:10%; height: 90%; width: 100%"></span>
+    </a>
+    
+</div>
+
+        
+            
+<div class="project-card noselect " style="grid-row: 1; grid-column: 2; "> 
+    <div class="project-title">
+    
+        <a href="https://github.com/cbloodsworth/perry" target="_blank" style="text-decoration: none">
+            <picture><source type="image/avif" srcset="/img/FgkYsnA93Y-240.avif 240w"><source type="image/webp" srcset="/img/FgkYsnA93Y-240.webp 240w"><img loading="lazy" decoding="async" src="/img/FgkYsnA93Y-240.png" alt="github" style="width: 1rem" width="240" height="240"></picture>
+            Perry
+        </a>
+    
+    </div>
+    
+    <div class="project-thumb">
+    
+        <picture><source type="image/avif" srcset="/img/VQ92RpPk1l-224.avif 224w"><source type="image/webp" srcset="/img/VQ92RpPk1l-224.webp 224w"><img loading="lazy" decoding="async" src="/img/VQ92RpPk1l-224.png" class="project-thumb" alt="REPL output of a simple expression evaluating to 42" width="224" height="120"></picture>
+    
+    </div>
+    <div class="project-info">
+    <p>
+        A small, interpreted language. Supports various arithmetic and string operations.
+    </p>
+    </div>
+    
+    
+</div>
+
+        
+            
+<div class="project-card noselect " style="grid-row: 2; grid-column: 1; "> 
     <div class="project-title">
     
         <a href="https://github.com/cbloodsworth/Chess" target="_blank" style="text-decoration: none">
@@ -435,6 +503,7 @@ header {
         </a>
     
     </div>
+    
     <div class="project-thumb">
     
         <picture><source type="image/avif" srcset="/img/RpiPDMETz2-1024.avif 1024w"><source type="image/webp" srcset="/img/RpiPDMETz2-1024.webp 1024w"><img loading="lazy" decoding="async" src="/img/RpiPDMETz2-1024.png" class="project-thumb" alt="chess" width="1024" height="1024"></picture>
@@ -445,59 +514,19 @@ header {
         The original two-player game. Made in C++ and uses SFML for visuals.
     </p>
     </div>
+    
+    
 </div>
 
         
             
-    <div class="project-card noclick" style="grid-row: 1; grid-column: 2; ">
-    <div class="project-title">
-    
-        Image Processor
-    
-    </div>
-    <div class="project-thumb">
-    
-        <picture><source type="image/avif" srcset="/img/3gRLf-9paT-600.avif 600w"><source type="image/webp" srcset="/img/3gRLf-9paT-600.webp 600w"><img loading="lazy" decoding="async" src="/img/3gRLf-9paT-600.png" class="project-thumb" alt="image processor" width="600" height="382"></picture>
-    
-    </div>
-    <div class="project-info">
-    <p>
-        Takes in various .tga files and combines / manipulates them. Made in C++
-    </p>
-    </div>
-</div>
-
-        
-            
-    <div class="project-card noclick" style="grid-row: 2; grid-column: 1; ">
-    <div class="project-title">
-    
-        <a href="https://github.com/cbloodsworth/DiscoverDelays" target="_blank" style="text-decoration: none">
-            <picture><source type="image/avif" srcset="/img/FgkYsnA93Y-240.avif 240w"><source type="image/webp" srcset="/img/FgkYsnA93Y-240.webp 240w"><img loading="lazy" decoding="async" src="/img/FgkYsnA93Y-240.png" alt="github" style="width: 1rem" width="240" height="240"></picture>
-            Discover Delays
-        </a>
-    
-    </div>
-    <div class="project-thumb">
-    
-        <picture><source type="image/avif" srcset="/img/LPLYDkJDPC-1024.avif 1024w"><source type="image/webp" srcset="/img/LPLYDkJDPC-1024.webp 1024w"><img loading="lazy" decoding="async" src="/img/LPLYDkJDPC-1024.png" class="project-thumb" alt="flight data viewing client" width="1024" height="892"></picture>
-    
-    </div>
-    <div class="project-info">
-    <p>
-        Takes in a .csv with flight info, sorts the data and displays it. Made in C++ and uses SFML for visuals.
-    </p>
-    </div>
-</div>
-
-        
-            
-    <div class="project-card noclick" style="grid-row: 2; grid-column: 2; ">
+<div class="project-card noselect noclick" style="grid-row: 2; grid-column: 2; "> 
     <div class="project-title">
     
         ARM Disassembler
     
     </div>
+    
     <div class="project-thumb">
     
         <picture><source type="image/avif" srcset="/img/Pq9Arcj3-L-1130.avif 1130w"><source type="image/webp" srcset="/img/Pq9Arcj3-L-1130.webp 1130w"><img loading="lazy" decoding="async" src="/img/Pq9Arcj3-L-1130.png" class="project-thumb" alt="binary to ARM" width="1130" height="1130"></picture>
@@ -508,16 +537,19 @@ header {
         Takes in binary machine code and outputs the equivalent ARMv8 instructions, then executes them. Made in C++.
     </p>
     </div>
+    
+    
 </div>
 
         
             
-    <div class="project-card noclick" style="grid-row: 3; grid-column: 1; ">
+<div class="project-card noselect noclick" style="grid-row: 3; grid-column: 1; "> 
     <div class="project-title">
     
         Gator Raider
     
     </div>
+    
     <div class="project-thumb">
     
         <picture><source type="image/avif" srcset="/img/nbYkADOYco-351.avif 351w"><source type="image/webp" srcset="/img/nbYkADOYco-351.webp 351w"><img loading="lazy" decoding="async" src="/img/nbYkADOYco-351.png" class="project-thumb" alt="pacman game with code in background" width="351" height="340"></picture>
@@ -528,36 +560,46 @@ header {
         Developed a bot for a pre-made Ms. Pacman clone that attempts to get the most points possible. Made in Java.
     </p>
     </div>
+    
+    
 </div>
 
         
             
-    <div class="project-card " style="grid-row: 3; grid-column: 2; ">
+<div class="project-card noselect " style="grid-row: 3; grid-column: 2; "> 
     <div class="project-title">
     
         <a href="https://github.com/cbloodsworth/cbloodsworth.github.io" target="_blank" style="text-decoration: none">
             <picture><source type="image/avif" srcset="/img/FgkYsnA93Y-240.avif 240w"><source type="image/webp" srcset="/img/FgkYsnA93Y-240.webp 240w"><img loading="lazy" decoding="async" src="/img/FgkYsnA93Y-240.png" alt="github" style="width: 1rem" width="240" height="240"></picture>
-            Portfolio Site
+            Personal Site
         </a>
     
     </div>
+    
     <div class="project-thumb">
     
-        <a href="/projects/portfolio-site">
-        <picture><source type="image/avif" srcset="/img/5w7Uc-e6Zt-1285.avif 1285w"><source type="image/webp" srcset="/img/5w7Uc-e6Zt-1285.webp 1285w"><img loading="lazy" decoding="async" src="/img/5w7Uc-e6Zt-1285.png" class="project-thumb" alt="portfolio site" width="1285" height="1289"></picture>
+        <a href="/projects/personal-site">
+        <picture><source type="image/avif" srcset="/img/N-twaNTqr8-1028.avif 1028w"><source type="image/webp" srcset="/img/N-twaNTqr8-1028.webp 1028w"><img loading="lazy" decoding="async" src="/img/N-twaNTqr8-1028.png" class="project-thumb" alt="personal site" width="1028" height="934"></picture>
+        <picture><source type="image/avif" srcset="/img/INm9cijMxn-512.avif 512w"><source type="image/webp" srcset="/img/INm9cijMxn-512.webp 512w"><img loading="lazy" decoding="async" src="/img/INm9cijMxn-512.png" alt="list" style="width: 2rem; position: absolute; right: 10%;" width="512" height="512"></picture>
         </a>
     
     </div>
     <div class="project-info">
     <p>
-        Developed a personal portfolio website in HTML/CSS. You&#39;re on it right now!
+        Personal website. You&#39;re on it right now!
     </p>
     </div>
+    
+    
+    <a href=" /projects/personal-site">
+        <span style="display:block; position: absolute; margin-left: -1rem; top:10%; height: 90%; width: 100%"></span>
+    </a>
+    
 </div>
 
         
             
-    <div class="project-card noclick" style="grid-row: 4; grid-column: 1; ">
+<div class="project-card noselect " style="grid-row: 4; grid-column: 1; "> 
     <div class="project-title">
     
         <a href="https://github.com/cbloodsworth/SwampInvestigator" target="_blank" style="text-decoration: none">
@@ -566,6 +608,7 @@ header {
         </a>
     
     </div>
+    
     <div class="project-thumb">
     
         <picture><source type="image/avif" srcset="/img/IoXbiyrWdi-1372.avif 1372w"><source type="image/webp" srcset="/img/IoXbiyrWdi-1372.webp 1372w"><img loading="lazy" decoding="async" src="/img/IoXbiyrWdi-1372.png" class="project-thumb" alt="swamp investigator exploration game" width="1372" height="1279"></picture>
@@ -576,16 +619,19 @@ header {
         Procedurally generated exploration game made in Python using the PyGame framework.
     </p>
     </div>
+    
+    
 </div>
 
         
             
-    <div class="project-card noclick" style="grid-row: 4; grid-column: 2; ">
+<div class="project-card noselect noclick" style="grid-row: 4; grid-column: 2; "> 
     <div class="project-title">
     
         PLC Interpreter
     
     </div>
+    
     <div class="project-thumb">
     
         <picture><source type="image/avif" srcset="/img/C3u_0l2nMR-1000.avif 1000w"><source type="image/webp" srcset="/img/C3u_0l2nMR-1000.webp 1000w"><img loading="lazy" decoding="async" src="/img/C3u_0l2nMR-1000.png" class="project-thumb" alt="plc interpreter to java programming language" width="1000" height="1000"></picture>
@@ -596,6 +642,8 @@ header {
         Interpreter from a made-up language to Java. Parses &quot;PLC language&quot; code, produces valid and compilable Java code.
     </p>
     </div>
+    
+    
 </div>
 
         
@@ -620,7 +668,7 @@ header {
 		</table>
 		</footer>
 
-		<!-- This page `/projects/` was built on 2025-05-18T15:11:51.983Z -->
+		<!-- This page `/projects/` was built on 2025-05-18T21:08:19.413Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
 	</body>
 </html>
