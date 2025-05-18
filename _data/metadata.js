@@ -1,8 +1,8 @@
 export default {
 	title: "pearblog",
-	url: "https://example.com/",
+	url: "https://cbloodsworth.github.io/",
 	language: "en",
-	description: "I write about things I find interesting.",
+	description: "Technical thoughts about things I find interesting.",
 	author: {
 		name: "Chris Bloodsworth",
 		email: "christopherbloodsworth@gmail.com",
