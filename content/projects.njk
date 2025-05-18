@@ -1,0 +1,20 @@
+---js
+const eleventyNavigation = {
+    key: "Projects",
+    order: 6
+};
+---
+
+{% import "projectCard.njk" as components %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1> Projects </h1>
+    <div class="project-grid">
+        {% for project in projects %}
+            {{ components.projectCard(project)}}
+        {% endfor %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+{% macro projectCard(project) %}
+    <div
+        class="project-card {% if project.githubUrl %}{% else %}noclick{% endif %}"
+        style="grid-row: {{ project.gridRow }}; grid-column: {{ project.gridColumn }}; {% if project.marginTop %}margin-top: auto{% endif %}"
+    >
+    <div class="project-title">
+    {% if project.githubUrl %}
+        <a href="{{ project.githubUrl }}" target="_blank" style="text-decoration: none">
+            <img
+                src="/assets/img/github-mark.png"
+                alt="github"
+                style="width: 1rem"
+            />
+        </a>
+    {% endif %}
+    {{ project.name }}
+    </div>
+    <div class="project-thumb">
+    {% if project.githubUrl %}
+        <a href="{{ project.githubUrl }}" target="_blank">
+        <img class="project-thumb" src="{{ project.imageUrl }}" alt="{{ project.altText }}" />
+        </a>
+    {% else %}
+        <img class="project-thumb" src="{{ project.imageUrl }}" alt="{{ project.altText }}" />
+    {% endif %}
+    </div>
+    <div class="project-info">
+    <p>
+        {{ project.description }}
+    </p>
+    </div>
+</div>
+{% endmacro %}
