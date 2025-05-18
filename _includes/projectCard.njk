@@ -1,8 +1,8 @@
 {% macro projectCard(project) %}
-    <div
-        class="project-card {% if project.blogUrl %}{% else %}noclick{% endif %}"
-        style="grid-row: {{ project.gridRow }}; grid-column: {{ project.gridColumn }}; {% if project.marginTop %}margin-top: auto{% endif %}"
-    >
+<div
+    class="project-card noselect {% if project.blogUrl or project.githubUrl %}{% else %}noclick{% endif %}"
+    style="grid-row: {{ project.gridRow }}; grid-column: {{ project.gridColumn }}; {% if project.marginTop %}margin-top: auto{% endif %}"
+> 
     <div class="project-title">
     {% if project.githubUrl %}
         <a href="{{ project.githubUrl }}" target="_blank" style="text-decoration: none">
@@ -17,10 +17,16 @@
         {{ project.name }}
     {% endif %}
     </div>
+    
     <div class="project-thumb">
     {% if project.blogUrl %}
         <a href="{{ project.blogUrl }}">
         <img class="project-thumb" src="{{ project.imageUrl }}" alt="{{ project.altText }}" />
+        <img
+            src="/assets/img/list.png"
+            alt="list"
+            style="width: 2rem; position: absolute; right: 10%;"
+        />
         </a>
     {% else %}
         <img class="project-thumb" src="{{ project.imageUrl }}" alt="{{ project.altText }}" />
@@ -31,5 +37,11 @@
         {{ project.description }}
     </p>
     </div>
+    
+    {% if project.blogUrl %}
+    <a href=" {{ project.blogUrl }}">
+        <span style="display:block; position: absolute; margin-left: -1rem; top:10%; height: 90%; width: 100%"></span>
+    </a>
+    {% endif %}
 </div>
 {% endmacro %}
