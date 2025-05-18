@@ -6,9 +6,21 @@ const eleventyNavigation = {
 
 const numberOfLatestPostsToShow = 3;
 ---
+<h1 id="hello">Hello!</h1>
+<p>My name is Chris Bloodsworth. I love simple, beautiful code and discovering
+better ways to write it. I am very passionate about programming languages and
+creating better tools for developers.</p>
+<p>You can reach me via
+<a href="mailto:christopherbloodsworth@gmail.com" target="_blank" rel="noopener"> email</a>.
+I am also on <a href="https://github.com/cbloodsworth">Github</a>.</p>
+
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+{% if latestPostsCount > 0 %}
+	<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+{% else %}
+	<h1> No blogposts yet. Stay tuned! </h1>
+{% endif %}
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}

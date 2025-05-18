@@ -46,6 +46,7 @@ export default [
     name: "Portfolio Site",
     githubUrl: "https://github.com/cbloodsworth/cbloodsworth.github.io",
     imageUrl: "/assets/img/projects/portfolio.png",
+    blogUrl: "/projects/portfolio-site",
     altText: "portfolio site",
     description: "Developed a personal portfolio website in HTML/CSS. You're on it right now!",
     gridRow: 3,

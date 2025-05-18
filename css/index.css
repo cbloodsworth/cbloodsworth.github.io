@@ -10,14 +10,14 @@ h1, h2, h3 {
 /* Theme colors */
 :root {
 	--color-gray-20: #eaffed;
-	--color-gray-50: #aad1a5;
+	--color-gray-50: #b3d0b0;
 	--color-gray-90: #333;
 
 	--background-color: #d4e9cf;
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: #507e57;
-	--text-color-link-active: #82cb8d;
+	--text-color-link-active: #78b180;
 	--text-color-link-visited: #6d507e;
 
 	--syntax-tab-size: 2;
@@ -45,7 +45,7 @@ html {
 }
 body {
 	font-size: 1.25em;
-	max-width: 40em;
+	max-width: 50em;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -369,7 +369,9 @@ header {
 .project-info {
     margin-top: -0.7vh;
     margin-inline: -0.3vw;
-    font-size: 0.8em;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+    font-size: 0.9em;
     line-height: 2vh; 
     font-weight: bolder;
 }

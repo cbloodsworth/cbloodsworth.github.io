@@ -24,7 +24,7 @@ const eleventyNavigation = {
 
     // Styling for the list and tables...
     htmlContent = htmlContent.replaceAll('<li><table>', 
-        `<li style="list-style-type: none; margin-left: -2em; width: 120%;">
+        `<li style="list-style-type: none; margin-left: -2em; width: 100%;">
         <table style="width: 100%; margin-bottom: 0em;">`
     );
 
