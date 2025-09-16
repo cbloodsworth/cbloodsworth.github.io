@@ -5,11 +5,16 @@ import path from 'node:path';
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
 const latexFilePath = path.resolve(__dirname, '../content/assets/pdf/cbloodsworth_resume.tex');
 const htmlPath = path.resolve(__dirname, '../content/resume.njk');
+const pdfPath = path.resolve(__dirname, '../content/assets/pdf');
 
 try {
+    console.log(`Converting ${latexFilePath} to ${pdfPath}...`);
+    execSync(`latexmk ${latexFilePath} -auxdir=/tmp -pdf -outdir=${pdfPath}`);
+    console.log('Resume conversion to PDF successful');
+
     console.log(`Converting ${latexFilePath} to ${htmlPath}...`);
     execSync(`pandoc "${latexFilePath}" -o "${htmlPath}"`);
-    console.log('Resume conversion successful');
+    console.log('Resume conversion to HTML successful');
     let htmlContent = fs.readFileSync(htmlPath, 'utf-8');
 
     // Add header
